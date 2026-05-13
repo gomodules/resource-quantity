@@ -395,9 +395,9 @@ func ParseQuantity(str string) (Quantity, error) {
 	}
 
 	q := Quantity{d: infDecAmount{amount}, Format: format}
-	if copyAmount.Cmp(amount) == 0 {
-		q.s = str
-	}
+	//if copyAmount.Cmp(amount) == 0 {
+	//	q.s = str
+	//}
 	return q, nil
 }
 
